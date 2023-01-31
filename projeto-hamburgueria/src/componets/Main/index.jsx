@@ -2,12 +2,8 @@ import {StyleMain} from "./StyleMain.js"
 import {ProductsList} from "../ProductsList"
 import {CarrinhoDeCompras} from "../carrinhoDeCompras"
 
-
-
-
-
 export const Main = ({produtos , carrinho , setCarrinho}) => {
-
+    
     return(
 
         <StyleMain>

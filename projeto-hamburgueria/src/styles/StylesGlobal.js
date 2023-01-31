@@ -72,6 +72,9 @@ dialog::backdrop{
   
 }
 
-
+.app{
+  box-sizing: border-box;
+  
+}
 
 `

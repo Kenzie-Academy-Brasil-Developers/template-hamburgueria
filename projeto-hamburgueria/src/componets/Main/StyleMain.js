@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const StyleMain = styled.main`
-   
-    
 
-    margin-top: 30px ;
-    box-sizing: border-box;
-    padding: 5px;
+    margin-top: 40px 0;
     
+    
+    padding: 10px;
+    padding-top: 30px;
     
     > div{
 
@@ -16,10 +15,8 @@ export const StyleMain = styled.main`
         margin: 0 auto;
         width: 100%;
         max-width: 1400px;
-        
 
         section{
-
            
             width: 100%;
             max-width: 70%;
@@ -42,7 +39,22 @@ export const StyleMain = styled.main`
 
     }
 
+    @media (max-width: 800px ) {
+        
+        >div{
+            flex-direction: column;
 
+            section{
+             min-width: 100%;
+             margin-bottom: 20px;
+ 
+            }
+        }
+
+      
+
+    }
+  
      
 
 `
