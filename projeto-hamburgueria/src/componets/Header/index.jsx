@@ -6,7 +6,6 @@ export const Header = ({produtos , setProductsFilter , productsFilter}) => {
 
        const desconstruindo = [...produtos]
 
-       console.log(produtos)
        const filtrados = desconstruindo.filter((produto) => 
        produto.name.toLowerCase().startsWith(e.target.value.toLowerCase())
        ||
