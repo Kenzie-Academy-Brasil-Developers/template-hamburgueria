@@ -45,9 +45,7 @@ export const HeaderComponet = styled.header`
             padding: 10px 4px;
             border: 2px solid rgb(0 , 0 , 0 , 0.1) ;
             border-radius: 6px;
-            
-            
-        
+ 
             button{
 
                 background-color: var(--color-1);
@@ -66,8 +64,6 @@ export const HeaderComponet = styled.header`
                 border-radius: 6px; 
                 outline: none;
             }
-
-           
 
         }
     }

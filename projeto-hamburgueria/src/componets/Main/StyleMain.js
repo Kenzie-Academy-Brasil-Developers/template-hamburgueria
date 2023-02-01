@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const StyleMain = styled.main`
 
     margin-top: 40px 0;
-    
-    
     padding: 10px;
     padding-top: 30px;
     
@@ -68,10 +66,6 @@ export const StyleMain = styled.main`
             }
         }
 
-      
-
     }
   
-     
-
 `

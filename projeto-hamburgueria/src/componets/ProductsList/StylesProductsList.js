@@ -18,7 +18,6 @@ export const ProductsListStyle = styled.li`
     max-width: 250px;
     height:300px;
     
-
     img{
     
         max-width: 50%;
