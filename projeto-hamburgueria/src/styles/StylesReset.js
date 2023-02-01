@@ -21,6 +21,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+    
     margin: 0;
     padding: 0;
     border: 0;
@@ -68,25 +69,21 @@ input::placeholder{
     color: rgb(185, 185, 187);
 }
 
-
-
-
 ::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px;    
+  
 }
 
-::-webkit-scrollbar-track {
-   
-     /* color of the tracking area */
+::-webkit-scrollbar-corner{
+    width: 5px;
+    background: black;
 }
 
 ::-webkit-scrollbar-thumb {
     
-  background-color: var(--color-1);    /* color of the scroll thumb */
+  background-color: rgb(178, 178, 179, 0.6);
   border-radius: 20px;  
-     /* roundness of the scroll thumb */
-
+ 
 }
-
 
 `
