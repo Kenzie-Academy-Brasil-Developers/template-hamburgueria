@@ -33,6 +33,12 @@ color: white;
             border-radius: 6px;
         }
 
+        button:hover{
+            border: #828282 solid 2px ;
+            background-color: #828282;
+            color: #fff;
+        }
+
         h6{
             font-size: 14;
             text-align: center;
@@ -103,12 +109,13 @@ color: white;
         display: flex;
         justify-content: space-between;
         font-size: 16px;
-        font-weight: 00;
+        font-weight: 400;
 
         span + span {
         color: #828282;
-    }
+        font-weight: 600;
 
+    }
 
 }
 `

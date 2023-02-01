@@ -1,11 +1,11 @@
-import { useState , useEffect } from 'react'
-import { Header } from './componets/Header'
-import { Main } from './componets/Main' 
+import { useState , useEffect } from "react"
+import { Header } from "./componets/Header"
+import { Main } from "./componets/Main" 
 import {api} from "./requests/api"
 
-import React from  'react';
-import { ToastContainer, toast } from  'react-toastify' ;
-import 'react-toastify/dist/ReactToastify.min.css';
+import React from  "react";
+import { ToastContainer, toast } from  "react-toastify" ;
+import "react-toastify/dist/ReactToastify.min.css";
 
 
 function App() {

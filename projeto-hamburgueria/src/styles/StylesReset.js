@@ -68,4 +68,25 @@ input::placeholder{
     color: rgb(185, 185, 187);
 }
 
+
+
+
+::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+   
+     /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    
+  background-color: var(--color-1);    /* color of the scroll thumb */
+  border-radius: 20px;  
+     /* roundness of the scroll thumb */
+
+}
+
+
 `

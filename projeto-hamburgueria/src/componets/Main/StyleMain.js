@@ -28,6 +28,22 @@ export const StyleMain = styled.main`
                 gap: 20px; 
             }
 
+            @media (max-width: 800px) {
+                
+               > ul{
+              
+                    flex-direction: row;
+                    justify-content: flex-start ;
+                    flex-wrap: nowrap ;
+                    overflow-y: hidden ;
+                }
+
+                li{
+                   min-width: 250px;
+                }
+
+            }
+
         }
 
         section + section{

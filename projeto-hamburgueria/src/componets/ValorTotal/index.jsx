@@ -1,6 +1,6 @@
 import  {useState , useEffect} from "react"
-import { ToastContainer, toast } from  'react-toastify' ;
-import 'react-toastify/dist/ReactToastify.min.css';
+import { ToastContainer, toast } from  "react-toastify" ;
+import "react-toastify/dist/ReactToastify.min.css";
 
 export const ValorTotal = ({carrinho , setCarrinho}) => {
 
@@ -24,6 +24,7 @@ export const ValorTotal = ({carrinho , setCarrinho}) => {
     } 
 
     return(
+        
         <>
             <div className="totallyValue">
                     <span> Total </span>
