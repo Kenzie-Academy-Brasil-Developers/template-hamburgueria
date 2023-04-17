@@ -1,39 +1,36 @@
-import {HeaderComponet} from "./StyleHeader"
+import { HeaderComponet } from "./StyleHeader";
 
-export const Header = ({produtos , setProductsFilter , productsFilter}) => {
+export const Header = ({ produtos, setProductsFilter }) => {
+  const filterProducts = (e) => {
+    const desconstruindo = [...produtos];
 
-    const filterProducts = (e) => {
+    const filtrados = desconstruindo.filter(
+      (produto) =>
+        produto.name.toLowerCase().startsWith(e.target.value.toLowerCase()) ||
+        produto.category.toLowerCase().startsWith(e.target.value.toLowerCase())
+    );
 
-       const desconstruindo = [...produtos]
+    e.target.value == ""
+      ? setProductsFilter([false])
+      : setProductsFilter(filtrados);
+  };
 
-       const filtrados = desconstruindo.filter((produto) => 
-       produto.name.toLowerCase().startsWith(e.target.value.toLowerCase())
-       ||
-       produto.category.toLowerCase().startsWith(e.target.value.toLowerCase())
-       
-       )
-
-       e.target.value == "" ?
-
-       setProductsFilter([false])
-
-       :
-
-       setProductsFilter(filtrados) 
-
-    }
-
-    return (
-
-        <HeaderComponet>
-            <div>
-                <h1> Burguer <span>Kenzie</span></h1>
-                <div>
-                    <input onChange={filterProducts} placeholder="Digitar Pesquisa" type="text" />
-                    <button >Pesquisar</button>
-                </div>
-            </div>
-        </HeaderComponet>
-    )
-
-}
+  return (
+    <HeaderComponet>
+      <div>
+        <h1>
+          {" "}
+          Hungria <span>Burguer</span>
+        </h1>
+        <div>
+          <input
+            onChange={filterProducts}
+            placeholder="Digitar Pesquisa"
+            type="text"
+          />
+          <button>Pesquisar</button>
+        </div>
+      </div>
+    </HeaderComponet>
+  );
+};

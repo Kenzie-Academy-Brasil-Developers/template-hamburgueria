@@ -13,7 +13,7 @@ export const Main = ({produtos , carrinho , setCarrinho}) => {
                         {produtos.map((produto) => 
                             <ProductsList 
                             
-                                key={produto.id} 
+                                key={produto.id}
                                 id={produto.id} 
                                 name={produto.name}  
                                 category={produto.category}

@@ -4,6 +4,3 @@ export const api = axios.create({
     baseURL: "https://hamburgueria-kenzie-json-serve.herokuapp.com/products",
     setTimeout: 6000,
 })
-
-
-
